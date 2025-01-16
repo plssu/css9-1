@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 296px;
+    height: 1134px;
+    flex-shrink: 0;
+    background: #14171F;
+}
+
+.logo {
+    display: flex;
+    width: 248px;
+    margin: 0 auto;
+    padding: 0px 16px 16px 16px;
+    gap: 10px;
+    border-bottom: 1px solid #3D414B;;
+}
+
+.user-info {
+    display: flex;
+    width: 248px;
+    padding: 12px 0px;
+    border-top: 1px solid #7D70BD;
+    border-bottom: 1px solid #7D70BD;
+}
+
+.user-info > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.user-info > p {
+    color: #929699;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
