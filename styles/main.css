@@ -163,11 +163,15 @@ li:hover {
 
 .mainContent {
     display: flex;
-    width: 1080px;
+    max-width: 880px;
+    width: 880px;
+    min-height: auto;
+    margin: 0 auto;
     height: 228px;
     align-items: center;
     flex-shrink: 0;
-    background-image: url("./images/textbackground");
+    background-size: 200px;
+    background: url(".imgages/textbackground.png") lightgray 50% / cover no-repeat;
 }
 
 .mainContent > h1 {
@@ -182,10 +186,6 @@ li:hover {
 .mainContentText {
     display: flex;
     width: 564px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    flex-shrink: 0;
 }
 
 .mainContentText > h1 {
@@ -321,13 +321,47 @@ li:hover {
     gap: 6px;
     border-radius: 8px;
     background: #7F56D9;
-}
-
-#btn {
     color: #FFF;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+}
+
+.minibox-two {
+    display: flex;
+    width: 432px;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid #C7C7C7;
+}
+
+.minibox-two > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.first-side {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 600px;
+    border: 1px solid #C7C7C7;
+}
+
+.second-side {
+    display: flex;
+    gap: 12px;
+    align-self: stretch;
 }
