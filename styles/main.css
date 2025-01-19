@@ -20,16 +20,10 @@ span {
 }
 
 .left-side {
-    display: flex;
-    width: 224px;
-    height: 1715px;
-    padding: 16px 16px 1201px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
+    width: 296px;
+    height: 1262px;
     flex-shrink: 0;
-    border-right: 1px solid #434343;
-    background: #222224;
+    background: #14171F;
 }
 
 nav {
@@ -127,15 +121,18 @@ li:hover {
 
 .right-side {
     flex-grow: 1;
-    background-color: #f4f4f4;
+    max-width: 970px;;
+    width: 970px;
+    background-color: #FFF;;
     padding: 20px;
 }
 
 .head-nav {
     display: flex;
-    width: 1080px;
+    width: 970px;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFF;
 }
 
 .head-nav > div {
@@ -145,49 +142,41 @@ li:hover {
     gap: 24px; 
 }
 
-.search-bar > input {
+.btn {
     display: flex;
-    padding: 8px 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    flex: 1 0 0;
-    border-radius: 8px 0px 0px 8px;
-    border-top: 1px solid #FAE101;
-    border-bottom: 1px solid #FAE101;
-    border-left: 1px solid #FAE101;
+    border-radius: 24px;
+    background-color: #F7F7F7;
 }
 
-.search-bar > button {
-    border-radius: 0px 8px 8px 0px;
-    background-color: #FAE101;
+.btn > img {
+    flex-shrink: 0;
 }
 
-.search-bar > div {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-img[src="images/Myprofilepicture.png"] {
-    width: 40px;
-    height: 40px;
+.btn > p {
+    color: #2F2F2F;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .mainContent {
-    display: inline-flex;
-    width: 1020px;
-    padding: 19px 170px 19px 40px;
-    justify-content: space-between;
+    display: flex;
+    width: 1080px;
+    height: 228px;
     align-items: center;
-    border-radius: 16px;
-    background-color: #57575f;
+    flex-shrink: 0;
+    background-image: url("./images/textbackground");
 }
 
-.mainImg {
-    width: 381px;
-    height: 358px;
-    flex-shrink: 0;
+.mainContent > h1 {
+    color: #2F2F2F;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
 }
 
 .mainContentText {
@@ -202,11 +191,6 @@ img[src="images/Myprofilepicture.png"] {
 .mainContentText > h1 {
     font-size: 56px;
     font-weight: 600;
-}
-
-.mainContentText > span {
-    font-size: 16px;
-    font-weight: 500;
 }
 
 .miniBoxes { 
@@ -229,122 +213,121 @@ img[src="images/Myprofilepicture.png"] {
 
 .miniBoxes > a:hover {
     background-color: yellow;
-} 
+}
 
-.flash {
+.personal-Information {
+    display: flex;
+    width: 702px;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #FFF;
+    border-radius: 16px;
+    border: 1px solid #C7C7C7;
+}
+
+.persolanInfo {
+    display: flex;
+    width: 254px;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.personalInfo > p {
+    align-self: stretch;
+    color: #14171F;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.personal-Information > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.fullnamenNumber {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.fullnamenNumber > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.text .email .date {
+    color: #2F2F2F;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#text-box #email-box #date-box {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background: #F9FBFC;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.numbers {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.numbers > span {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background: #14171F;
+}
+
+#btn {
+    display: flex;
+    width: 104px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    background: #7F56D9;
+}
+
+#btn {
     color: #FFF;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    align-self: stretch;
-}
-
-.flash-on-sale {
-    display: flex;
-    width: 700px;
-    height: 16px;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch;
-}
-
-.on-sale {
-    color: #FAE101;
-    font-family: 'Inter';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-}
-
-.countdown {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.time {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.unit {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.number {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 4px;
-    background: #FAE101;
-}
-
-.label {
-    font-size: 1rem;
-    visibility: hidden;
-}
-
-.cards {
-    display: flex;
-    height: 260px;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch;
-}
-
-.cards > div {
-    display: flex;
-    padding: 16px;
-    align-items: flex-start;
-    gap: 12px;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-radius: 12px;
-    border: 1px solid #FAE101;
-    background: #222224;
-}
-
-.div-two {
-
-    align-items: flex-start;
-    gap: 4px;
-    align-self: stretch;
-}
-
-button {
-    display: flex;
-    height: 40px;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 4px;
-    background: #FAE101;
-}
-
-.four-cards {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-}
-
-.allthemes {
-    display: flex;
-    width: 1088px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
 }
