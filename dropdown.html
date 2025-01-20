@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        background-color: #f4f4f9;
+      }
+
+      /* Left-side navigation */
+      .left-nav {
+        width: 296px;
+        height: 1262px;
+        flex-shrink: 0;
+      }
+
+      .left-navProfilePic {
+        display: flex;
+        width: 248px;
+        padding: 12px 0px;
+        align-items: center;
+        border-top: 1px solid #7D70BD;
+        border-bottom: 1px solid #7D70BD;
+      }
+
+      .left-navProfilePic > div {
+        display: flex;
+        width: 113px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-item:hover {
+        background-color: yellow;
+      }
+
+      .left-nav-bottomeSide {
+        display: flex;
+        width: 248px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        border-top: 1px solid #3D414B;
+        border-bottom: 1px solid #3D414B;
+      }
+
+      .left-nav-bottomeSide > ul li:hover {
+        background-color: yellow;
+      }
+
+      /* Right-side top navigation */
+      .right-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .top-nav {
+        display: flex;
+        width: 980px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-nav-leftSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .top-nav-rightSide {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn {
+        display: flex;
+        padding: 8px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 50px;
+        border: 1px solid #C7C7C7;
+        background: #F7F7F7;
+      }
+
+      /* Main content */
+      .right-side {
+        flex: 1;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .right-side img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      .right-side button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .right-side button:hover {
+        background-color: #0056b3;
+      }
+
+      .right-side p {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-nav">
+      <div class="logo">
+        <img src="images/Logo.png" alt="logo" />
+      </div>
+      <div class="left-navProfilePic">
+        <img src="images/Myprofilepicture.png" alt="Myprofilepicture" width="40px" height="40px" />
+        <div>
+          <p>Aleks boch</p>
+          <span>Student</span>
+        </div>
+      </div>
+      <div>
+        <p><img class="menu-item" src="images/Frame 10.png" alt="Dashboard" /></p>
+        <p><img class="menu-item" src="images/Frame 11.png" alt="My Courses" /></p>
+        <p><img class="menu-item" src="images/Frame 16.png" alt="Save Casses" /></p>
+        <p><img class="menu-item" src="images/Frame 12.png" alt="Assignments" /></p>
+        <p><img class="menu-item" src="images/Frame 13.png" alt="Test" /></p>
+        <p><img class="menu-item" src="images/Frame 14.png" alt="Groups" /></p>
+        <p><img class="menu-item" src="images/Frame 15.png" alt="Forum" /></p>
+      </div>
+      <div class="left-nav-bottomeSide">
+        <ul>
+            <li><img src="images/Frame 17.png" alt="Analytics" /></li>
+            <li><img src="images/Frame 18.png" alt="Setting" /></li>
+        </ul>
+    </div>
+    </div>
+    <!-- Right section -->
+    <div class="right-section">
+      <!-- Top navigation -->
+      <div class="top-nav">
+        <div class="top-nav-leftSide">
+          <div>
+            <p>Learning Paths</p>
+          </div>
+          <div>
+            <p>Create</p>
+          </div>
+          <div>
+            <p>Build</p>
+          </div>
+          <div>
+            <p>Thrive</p>
+          </div>
+        </div>
+        <div class="top-nav-rightSide">
+          <button class="btn">
+            <img src="images/notification.png" alt="notification" />
+          </button>
+          <button class="btn">
+            <img src="images/search.png" alt="search" />
+          </button>
+          <button class="btn">
+            <p>Become a teacher</p>
+          </button>
+          <button class="btn">
+            <p>My classes</p>
+          </button>
+        </div>
+      </div>
+      <!-- Content section -->
+      <div class="right-side">
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+        <p>This is the fourth paragraph.</p>
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <p>This is some additional information.</p>
+      </div>
+    </div>
+  </body>
+</html>
