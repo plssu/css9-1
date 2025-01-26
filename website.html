@@ -126,7 +126,6 @@
         font-size: 16px;
         cursor: pointer;
         margin-bottom: 10px;
-        transition: background-color 0.3s;
       }
 
       .right-side button:hover {
@@ -138,6 +137,27 @@
         color: #666;
         text-align: center;
         margin-top: 10px;
+      }
+      
+      .background-div {
+        background-image: url('./images/textbackground.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 1080px;
+        height: 228px;
+        flex-shrink: 0;
+      }
+
+      .background-div h1 {
+        display: flex;
+        width: 416px;
+        color: #87ec87;
+        font-family: 'Inter';
+        border: 2px solid white;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -154,7 +174,7 @@
         </div>
       </div>
       <div>
-        <p><img class="menu-item" src="images/Frame 10.png" alt="Dashboard" /></p>
+        <p><img class="menu-item" src="images/Frame 10.png" onclick="t" alt="Dashboard" /></p>
         <p><img class="menu-item" src="images/Frame 11.png" alt="My Courses" /></p>
         <p><img class="menu-item" src="images/Frame 16.png" alt="Save Casses" /></p>
         <p><img class="menu-item" src="images/Frame 12.png" alt="Assignments" /></p>
@@ -204,7 +224,9 @@
       </div>
       <!-- Content section -->
       <div class="right-side">
-        <p>This is the first paragraph.</p>
+        <div class="background-div">
+          <h1>Tune In And Level Up At Your Own Place</h1>
+        </div>
         <p>This is the second paragraph.</p>
         <p>This is the third paragraph.</p>
         <p>This is the fourth paragraph.</p>
